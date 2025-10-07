@@ -1,10 +1,9 @@
-﻿import fs from "fs";
+import fs from "fs";
 import path from "path";
 import prettier from "prettier";
 import { URL } from "url";
 // Handle CommonJS modules
 const jsonToTS = require("json-to-ts");
-const qs = require("qs");
 
 export interface HarFile {
   log: {
@@ -432,21 +431,14 @@ export async function ${createFunctionName(request.url, request.method)}(
   }
 }
 
-export async function main() {
-  try {
-    console.log("🚀 Starting HAR to TypeScript SDK generation...");
-    await generateFromHar(
-      path.join(process.cwd(), "session.har"),
-      path.join(process.cwd(), "api.ts"),
-      {
-        typePrefix: "",
-        mergeTypes: true,
-      }
-    );
-  } catch (error) {
-    console.error("Error:", error);
-    process.exit(1);
-  }
+export async function runHarToTs(sourceFile: string, destinationFile: string) {
+  console.log("🚀 Starting HAR to TypeScript SDK generation...");
+  await generateFromHar(
+    path.resolve(process.cwd(), sourceFile),
+    path.resolve(process.cwd(), destinationFile),
+    {
+      typePrefix: "",
+      mergeTypes: true,
+    }
+  );
 }
-
-main()
