@@ -1,7 +1,7 @@
 {
   "name": "@chahakshah/har-to-ts",
   "name_ext": "HAR To TypeScript API",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create API file from HAR Session file",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
