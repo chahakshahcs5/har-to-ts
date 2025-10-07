@@ -1,13 +1,17 @@
 {
-  "name": "har-to-ts",
+  "name": "@chahakshah/har-to-ts",
+  "name_ext": "HAR To TypeScript API",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create API file from HAR Session file",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
     "har-to-ts": "dist/cli.js"
   },
-  "files": ["src", "dist"],
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
@@ -15,9 +19,24 @@
     "typecheck": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "HAR",
+    "TypeScript",
+    "API",
+    "Generator"
+  ],
+  "author": "Chahak Shah",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chahakshahcs5/har-to-ts"
+  },
+  "bugs": {
+    "url": "https://github.com/chahakshahcs5/har-to-ts/issues"
+  },
   "devDependencies": {
     "@types/node": "^24.7.0",
     "@types/qs": "^6.14.0",
