@@ -30,10 +30,12 @@ This will read the HAR file `session.har` and generate the TypeScript SDK in `ap
 
 ## How to get HAR file
 -  Open any website for which you want to generate API file
--  Open Developer Tools and Click on Settings
--  ![alt text](screenshots/image-1.png)
--  ![alt text](screenshots/image-2.png)
-    Check Preserve Log, Record Network Log And Allow to generate HAR with sensitive data
+-  Open Developer Tools and click on settings
+   ![alt text](screenshots/image-1.png)
+   
+-  Check Preserve Log, Record Network Log And Allow to generate HAR with sensitive data
+   ![alt text](screenshots/image-2.png)
+    
 -  Clear Network Log and Refresh Page and surf and explore entire website and then click Download Icon
    ![alt text](screenshots/image-3.png)
 
